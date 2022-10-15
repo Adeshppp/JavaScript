@@ -1,6 +1,7 @@
 let namastebtn = document.querySelector('button');
-namastebtn.addEventListener('click',showMsg);
+namastebtn.addEventListener('click',inputMsg);
 
-function showMsg(){
-    alert("Welcome to JavaScript");
+function inputMsg(){
+    let name=prompt('Enter Your Name');
+    namastebtn.textContent = 'Welcome '+name;
 }
