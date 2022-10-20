@@ -16,3 +16,5 @@ W2:
         1. defer attribute : initially loads HTML and CSS first then loads JS at the end.
         2. async attribute : loads all JS files parallelly.
     loops in JS.
+    Strings in JS.
+    

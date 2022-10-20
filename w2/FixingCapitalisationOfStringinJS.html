@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixing Capitalisation</title>
+</head>
+<body>
+    <h2>Fixing Capitalisation</h2>
+    <div class="output">
+        <ul>
+
+        </ul>
+    </div>
+    <script>
+        const list= document.querySelector(".output ul");// selecting ul list in output class of body.
+        list.innerHTML="";//creating list
+        let cities=['MumBai','DeLHi','gOA','pUNe','NaShIk'];
+        for(let i of cities){
+            let result="";
+            for(let j=0;j<i.length;j++){
+                if(j==0)result=result+i[j].toUpperCase();
+                else result=result+i[j].toLowerCase();
+            }
+            let listItem = document.createElement('li'); // creating li element
+            listItem.textContent = result; //embedding results to the list as a element
+            list.appendChild(listItem);//appending items to html.
+        }
+    </script>
+    
+</body>
+</html>

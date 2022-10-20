@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtering Greeting Messages</title>
+    <style>
+        button{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid yellowgreen;
+            background: yellowgreen;
+            color: black;
+            box-shadow: 1px 1px 2px blue;
+            border-radius: 10px;
+            padding: 3px 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Greeting Messages
+    </h1>
+    <button>Enter the button to get Greeting Messages!</button>
+    <div class="output">
+        <ol>
+
+        </ol>
+    </div>
+    <script>
+
+        let greetingBtn = document.querySelector('button');
+        
+        greetingBtn.addEventListener('click',greeting)
+        
+        let greetings = ["Happy Birthday",
+                            "Happy Holi!!!",
+                            "Happy Holi to all of you...",
+                            "Happy Holi to you and your Family...",
+                            "Holi Mubarak!!!",
+                            "Get well soon!",
+                            "Happy Anniversary",
+                            "Wishing you many many happie Birthday!"];
+        
+        
+        function greeting(){
+            const list = document.querySelector('.output ol');
+            list.innerHTML="";
+            let occasion=prompt("Enter occasion");
+            for(let i of greetings){
+                if(i.indexOf(occasion)!==-1) {
+                    let listItem = document.createElement('li');
+                    listItem.textContent = i;
+                    list.appendChild(listItem);  
+                }
+            }
+        }
+        
+        
+    </script>
+</body>
+</html>
+<!-- if(i.indexOf("Holi")!==-1){
+    let listItem = document.listElement('li');
+    listItem.textContent = i;
+    list.appendChild(listItem);
+}// returns -1 if Holi word won't be there in greetings. -->
