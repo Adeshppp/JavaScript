@@ -30,4 +30,5 @@ W2:
         2. Function (Object Data Type)
     Type Conversion & Coercion
     Objects
+    Classes
     
