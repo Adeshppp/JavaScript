@@ -24,4 +24,11 @@ describe("Test suit", function(){
         // expect(spy.calledWith(6,arg2)).to.be.true;
         })
 
+        it("spy the callback method", function(){
+            var callback = sinon.spy();
+            myObj.callTheCallBack(callback);
+            expect(callback.calledOnce).to.be.true;
+            // expect(callback.calledOnce).to.be.false;
+        })
+
 });

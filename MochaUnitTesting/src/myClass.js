@@ -7,6 +7,10 @@ class MyClass{
         var res = this.add(arg1, arg2); 
         return res;
     }
+
+    callTheCallBack(callback){
+        callback();
+    }
 }
 
 module.exports = MyClass;
