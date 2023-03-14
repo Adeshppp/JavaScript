@@ -3,6 +3,10 @@ class MyClass{
         console.log("Initiate");
     }
     add=(arg1, arg2)=> arg1+arg2;
+    callAnotherMethod(arg1,arg2){
+        var res = this.add(arg1, arg2); 
+        return res;
+    }
 }
 
 module.exports = MyClass;
