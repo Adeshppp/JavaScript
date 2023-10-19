@@ -2,9 +2,17 @@
 <html>
     <head>
         <title>Sample JS Page</title>
-        <script src="sample_new.js"></script>
+        <script>alert('Please enter your name');</script>
+        <!-- <script>confirm('Are you sure?');</script> -->
+        <!-- <script src="sample_new.js"></script> -->
+        <script>var name = prompt("Please enter your Name");
+            alert(name);
+            document.write(name);
+            console.log(name);
+        </script>
     </head>
     <body>
-        <h1>My name is Adesh</h1>
+        <h1>My name is Adesh Padwal</h1>
+        <a href="one.html" onclick="return confirm('Are you sure?')">Delete</a>
     </body>
 </html>
