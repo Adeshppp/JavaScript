@@ -32,3 +32,6 @@ W2:
     Objects
     Classes
     
+JS:
+
+We can not direclt execute JavaScript files in browser environments. to execute that we need to access js file inside html code.
