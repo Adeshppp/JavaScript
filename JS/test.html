@@ -14,6 +14,12 @@
             function samplekeyDownMethod(){
                 alert("key down event");
             }
+            function sampleMouseOverMethod(){
+                document.bgColor="orange";
+            }
+            function sampleMouseOutMethod(){
+                document.bgColor="skyblue";
+            }
         </script>
     </head>
     <body> 
@@ -24,5 +30,9 @@
         key up : <input type="text" onkeyup="return samplekeyUpMethod();">
         key press : <input type="text" onkeypress="return samplekeyPressMethod();">
         key down : <input type="text" onkeydown="return samplekeyDownMethod();">
+
+        <hr>
+        <button onmouseover="return sampleMouseOverMethod();">Mouse Over</button>
+        <button onmouseout="return sampleMouseOutMethod();">Mouse Out</button>
     </body>
 </html>
