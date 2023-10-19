@@ -5,15 +5,24 @@
         <!-- <script>confirm('Are you sure?');</script> -->
         <!-- <script src="sample_new.js"></script> -->
         <script>
-            function displayPopUpMessage(){
-                var name = prompt("Please enter your Name");
-                alert(name);
+            function samplekeyUpMethod(){
+                alert("key up event");
             }
-
+            function samplekeyPressMethod(){
+                alert("key press event");
+            }
+            function samplekeyDownMethod(){
+                alert("key down event");
+            }
         </script>
     </head>
-    <body onload = "return displayPopUpMessage();"> 
+    <body> 
         <h1>My name is Adesh Padwal</h1>
         <a href="">click here</a>
+
+        <hr>
+        key up : <input type="text" onkeyup="return samplekeyUpMethod();">
+        key press : <input type="text" onkeypress="return samplekeyPressMethod();">
+        key down : <input type="text" onkeydown="return samplekeyDownMethod();">
     </body>
 </html>
