@@ -2,17 +2,18 @@
 <html>
     <head>
         <title>Sample JS Page</title>
-        <script>alert('Please enter your name');</script>
         <!-- <script>confirm('Are you sure?');</script> -->
         <!-- <script src="sample_new.js"></script> -->
-        <script>var name = prompt("Please enter your Name");
-            alert(name);
-            document.write(name);
-            console.log(name);
+        <script>
+            function displayPopUpMessage(){
+                var name = prompt("Please enter your Name");
+                alert(name);
+            }
+
         </script>
     </head>
-    <body>
+    <body onload = "return displayPopUpMessage();"> 
         <h1>My name is Adesh Padwal</h1>
-        <a href="one.html" onclick="return confirm('Are you sure?')">Delete</a>
+        <a href="">click here</a>
     </body>
 </html>
